@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Website</title>
+    <style>
+        .navbar {
+            display: block;
+            /* width: 100vw; */
+            border: 2px solid black;
+            background-color: antiquewhite;
+            margin: 0px 0px;
+        }
+
+        .navbar h1 {
+            margin-left: 16px;
+            display: inline-block;
+        }
+
+        .search {
+            background-image: url(search.png);
+            background-repeat: no-repeat;
+            background-size: 30px;
+            background-position: 358px;
+            align-content: space-around;
+            border-radius: 5px;
+            width: 350px;
+            margin: auto;
+
+            height: 0px;
+            display: inline-block;
+            padding: 20px;
+        }
+
+        @media (max-width:560px) {
+            .search {
+                width: 150px;
+                background-position: 145px;
+            }
+        }
+        @media (max-width:320px) {
+            .search{
+                width: 120px;
+                background-position: 130px;
+            }
+            
+        }
+      
+
+        .cart {
+            display: inline-block;
+            width: 40px;
+            height: 42px;
+            /* float: right; */
+            margin-right: 19px;
+            margin-top: 13px;
+            background-color: antiquewhite;
+            border-radius: 8px;
+            position: absolute;
+            right: 4px;
+        }
+
+        .container {
+            display: block;
+            border: 2px solid black;
+            background-image: url(jeans.jpg);
+            background-repeat: no-repeat;
+            background-position: inherit;
+            background-attachment: inherit;
+
+            background-size: cover;
+            height: 600px;
+            color: white;
+            padding: 40px;
+            font-size: larger;
+            /* margin-top: 5px; */
+            margin: 0px 0px;
+        }
+
+        @media (max-width:1050px) {
+            .container {
+                background-position: right;
+                height: fit-content;
+
+            }
+        }
+
+        .shop {
+            color: white;
+            background-color: black;
+            border-radius: 8px;
+            width: 100px;
+            height: 30px;
+            cursor: pointer;
+            margin-left: 18px;
+        }
+
+        .shop:hover {
+            color: rgb(189, 178, 178);
+        }
+
+        @media (max-width:1050px) {
+            .container {}
+        }
+
+        .container1 {
+            height: 32vh;
+            margin-top: 10px;
+            border: 2px solid black;
+            background-color: black;
+            color: white;
+        }
+        @media (max-width:320px) {
+            .container1{
+                height: 36vh;
+            }
+            
+        }
+
+        .container1 h1 {
+            margin-left: 15px;
+        }
+
+        .container1 p {
+            margin-top: 0px;
+            margin-left: 15px;
+            margin-bottom: 0px;
+            font-size: larger;
+        }
+
+        .email {
+            margin-top: 0px;
+            margin-left: 15px;
+            width: 95vw;
+            height: 5vh;
+        }
+
+        @media (max-width:780px) {
+            .email {
+                width: 60vw;
+                height: 3vh;
+            }
+
+        }
+
+        .Subscribe {
+            margin-top: 13px;
+            margin-left: 15px;
+            height: 4vh;
+            border-radius: 6px;
+            background-color: red;
+            color: white;
+        }
+
+        .footer {
+            border: 2px solid black;
+            background-color: rgb(211, 211, 231);
+            margin-top: 5px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        @media (max-width:490px) {
+            .footer {
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+
+
+
+
+        .foot {
+            margin-top: 10px;
+            margin-bottom: 5px;
+            height: 22px;
+            border: 2px solid black;
+
+        }
+
+        .sendbut {
+            background-color: black;
+            color: white;
+            width: 11vw;
+            height: 22px;
+            margin-top: 5px;
+        }
+
+        .footer2 {
+            text-align: center;
+        }
+
+        a {
+            color: black;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .footer4 {
+            background-color: black;
+            color: white;
+            text-align: center;
+            height: 50px;
+            padding-top: 20px;
+        }
+
+        .footer4 h4 {
+            margin-top: 5px;
+        }
+
+        .container2 {
+            height: 120vh;
+            background-color: aliceblue;
+            border: 2px solid black;
+            margin-top: 2px;
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+        }
+        @media (max-width:690px) {
+            .container2{
+                height: 200vh;
+                justify-content: space-evenly;
+            }
+            @media (max-width:410px) {
+                .container2{
+                    height: 250vh;
+                    justify-content: space-evenly;
+            }
+            
+        }    
+        }
+        .jea {
+            width: 24vw;
+            height: 45vh;
+            margin-left: 2px;
+        }
+        .jea:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="navbar">
+                <h1>Jeans</h1>
+                <input type="text" placeholder="Search Here!" class="search">
+                <img class="cart" src="cart.png" alt="">
+
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>New Arrivals <br> Collection 2023</h1>
+        <br>
+        <button class="shop">SHOP NOW</button>
+    </div>
+    <h2>Jeans</h2>
+    <div class="container2">
+        
+        <div class="con1">
+            <img class="jea" src="jeans8.jpg" alt="">
+            <p>Ripped skinny jeans</p>
+            <p><b>$24.99</b></p>
+        </div>
+        <div class="con2">
+            <img class="jea" src="jeans1.jpg" alt="">
+            <p>Ripped skinny jeans</p>
+            <p><b>$28.99</b></p>
+        </div>
+        <div class="con3">
+            <img class="jea" src="jeans2.jpg" alt="">
+            <p>Mega ripped jeans</p>
+            <p><b>$32.99</b></p>
+        </div>
+        <div class="con4">
+            <img class="jea" src="jeans3.jpg" alt="">
+            <p>Washed skinny jeans</p>
+            <p><b>$36.99</b></p>
+        </div>
+        <div class="con5">
+            <img class="jea" src="jeans4.jpg" alt="">
+            <p>Vintage skinny jeans</p>
+            <p><b>$40.99</b></p>
+        </div>
+        <div class="con6">
+            <img class="jea" src="jeans5.jpg" alt="">
+            <p>Mega ripped jeans</p>
+            <p><b>$32.99</b></p>
+        </div>
+        <div class="con7">
+            <img class="jea" src="jeans6.jpg" alt="">
+            <p>Washed skinny jeans</p>
+            <p><b>$36.99</b></p>
+        </div>
+        <div class="con8">
+            <img class="jea" src="jeans7.jpg" alt="">
+            <p>Vintage skinny jeans</p>
+            <p><b>$40.99</b></p>
+        </div>
+    </div>
+    <div class="container1">
+        <h1>Subscribe</h1>
+        <p>To get special offer and VIP treatment:</p><br>
+        <input class="email" type="text" placeholder="Enter a E-Mial"><br>
+        <input class="Subscribe" type="button" value="Subscribe">
+    </div>
+    <div class="footer">
+        <div class="footer1">
+            <h1>Contact</h1>
+            <h3>Question? Go ahead</h3>
+            <input class="foot" type="text" placeholder="Name"><br>
+            <input class="foot" type="text" placeholder="E-mial"><br>
+            <input class="foot" type="text" placeholder="Subject"><br>
+            <input class="foot" type="text" placeholder="Message"><br>
+            <input class="sendbut" type="button" value="Send">
+        </div>
+        <div class="footer2">
+            <h1>About</h1>
+            <ul>
+                <li><a href="About Us">About Us</a></li>
+                <li><a href="About Us">We're hiring</a></li>
+                <li><a href="About Us">Support</a></li>
+                <li><a href="About Us">Find Store</a></li>
+                <li><a href="About Us">Shipment</a></li>
+                <li><a href="About Us">Payment</a></li>
+                <li><a href="About Us">Gift Card</a></li>
+                <li><a href="About Us">Return</a></li>
+                <li><a href="About Us">Help</a></li>
+            </ul>
+        </div>
+        <div class="footer3">
+            <h1>Store</h1>
+            <p> &#x2616; India</p>
+            <p> &#x260F; 0044123123</p>
+            <p> &#x2709; ex@mail.com</p>
+            <h1>We accept</h1>
+            <p> &#128179; Amex</p>
+            <p> &#128179; Credit Card</p>
+        </div>
+    </div>
+    <div class="footer4">
+        <h4><i>Powered By Shoppingwebsite</i></h4>
+    </div>
+</body>
+
+</html>
